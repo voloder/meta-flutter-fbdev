@@ -19,4 +19,6 @@ do_install() {
     install -m 0755 ${WORKDIR}/build/flutter_fbdev ${D}${libdir}
 }
 
+EXTRA_OECMAKE += "-DCMAKE_SKIP_RPATH=TRUE"
+
 FILES:${PN} += "${libdir}/*"
