@@ -8,7 +8,7 @@ DEPENDS = "flutter-engine"
 
 SRCREV = "${AUTOREV}"
 PV = "1.0+git${SRCPV}"
-SRC_URI = "git://github.com/voloder/flutter-fbdev.git"
+SRC_URI = "git://github.com/voloder/flutter-fbdev.git;protocol=https;branch=main"
 
 S = "${WORKDIR}/git"
 
