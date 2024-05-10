@@ -19,4 +19,4 @@ do_install() {
     install -m 0755 ${WORKDIR}/build/flutter_fbdev ${D}${libdir}
 }
 
-FILES_${PN} += "${libdir}/*"
+FILES:${PN} += "${libdir}/*"
