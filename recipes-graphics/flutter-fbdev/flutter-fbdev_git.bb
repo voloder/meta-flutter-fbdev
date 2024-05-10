@@ -15,10 +15,10 @@ S = "${WORKDIR}/git"
 inherit cmake
 
 do_install() {
-    install -d ${D}${libdir}
-    install -m 0755 ${WORKDIR}/build/flutter_fbdev ${D}${libdir}
+    install -d ${D}${bindir}
+    install -m 0755 ${WORKDIR}/build/flutter_fbdev ${D}${bindir}
 }
 
 EXTRA_OECMAKE += "-DCMAKE_SKIP_RPATH=TRUE"
 
-FILES:${PN} += "${libdir}/*"
+FILES:${PN} += "${bindir}/*"
