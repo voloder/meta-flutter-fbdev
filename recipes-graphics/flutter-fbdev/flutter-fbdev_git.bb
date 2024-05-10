@@ -2,7 +2,7 @@ DESCRIPTION = "Flutter fbdev"
 SECTION = "graphics"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=2348605ab7c29b1d0aeeeae3d06518e8"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=4f8184c3eaddcdcf4a59cd59cca033e0"
 
 DEPENDS = "flutter-engine"
 
@@ -11,6 +11,8 @@ PV = "1.0+git${SRCPV}"
 SRC_URI = "git://github.com/voloder/flutter-fbdev.git;protocol=https;branch=main"
 
 S = "${WORKDIR}/git"
+
+FLUTTER_ENGINE_PATH=${STAGING_DIR_TARGET}${datadir}/flutter/${FLUTTER_SDK_VERSION}/${FLUTTER_RUNTIME_MODE}
 
 inherit cmake
 
