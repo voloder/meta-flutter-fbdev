@@ -12,7 +12,5 @@ SRC_URI = "git://github.com/voloder/flutter-fbdev.git;protocol=https;branch=main
 
 S = "${WORKDIR}/git"
 
-FLUTTER_ENGINE_PATH=${STAGING_DIR_TARGET}${datadir}/flutter/${FLUTTER_SDK_VERSION}/${FLUTTER_RUNTIME_MODE}
-
 inherit cmake
 
