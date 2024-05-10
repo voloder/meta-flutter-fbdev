@@ -14,3 +14,6 @@ S = "${WORKDIR}/git"
 
 inherit cmake
 
+do_install() {
+    install ${S}/build/flutter_fbdev  ${D}${bindir}/flutter_fbdev
+}
